@@ -54,24 +54,28 @@ export default function Home() {
 
   const projects = [
     {
-      title: 'Project Name',
-      category: 'General Contracting',
-      description: '[Placeholder - Project details to be added]',
+      title: 'Illustrative Project Example',
+      category: 'Commercial Buildings',
+      description: 'Professional construction photography used as a visual example, not an SAAC project record.',
+      image: '/manus-storage/commercial-building_f1796f32.jpg',
     },
     {
-      title: 'Project Name',
+      title: 'Illustrative Project Example',
+      category: 'Civil & Infrastructure',
+      description: 'Professional construction photography used as a visual example, not an SAAC project record.',
+      image: '/manus-storage/infrastructure-site_f96d2237.jpg',
+    },
+    {
+      title: 'Illustrative Project Example',
       category: 'Construction Works',
-      description: '[Placeholder - Project details to be added]',
+      description: 'Professional construction photography used as a visual example, not an SAAC project record.',
+      image: '/manus-storage/construction-cranes_6fceec45.jpg',
     },
     {
-      title: 'Project Name',
-      category: 'Civil Works',
-      description: '[Placeholder - Project details to be added]',
-    },
-    {
-      title: 'Project Name',
+      title: 'Illustrative Project Example',
       category: 'Finishing Works',
-      description: '[Placeholder - Project details to be added]',
+      description: 'Professional construction photography used as a visual example, not an SAAC project record.',
+      image: '/manus-storage/finishing-renovation_e4c13292.jpg',
     },
   ];
 
@@ -84,7 +88,9 @@ export default function Home() {
         id="home"
         className="relative min-h-screen flex items-center justify-center overflow-hidden"
         style={{
-          backgroundImage: 'url(/manus-storage/saac-hero-bg_05db40ae.png)',
+          backgroundImage: 'url(/manus-storage/hero-construction_1cf8457d.jpg)',
+          backgroundBlendMode: 'multiply',
+          backgroundColor: 'rgba(7, 16, 48, 0.22)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -235,7 +241,7 @@ export default function Home() {
               <h2 className="text-primary mb-4">Our Projects</h2>
               <div className="h-1 w-20 bg-accent mb-8"></div>
               <p className="text-foreground/70 text-lg max-w-2xl">
-                A selection of our completed projects showcasing our expertise and commitment to quality.
+                Professional visual examples of construction expertise. These photographs are illustrative references only and are not presented as SAAC project documentation.
               </p>
             </div>
 
@@ -246,9 +252,16 @@ export default function Home() {
                   key={index}
                   className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
                 >
-                  {/* Placeholder Image */}
-                  <div className="h-48 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                    <span className="text-foreground/40 text-sm">[Project Image]</span>
+                  {/* Illustrative Construction Image */}
+                  <div className="h-48 relative overflow-hidden bg-secondary">
+                    <img
+                      src={project.image}
+                      alt={`${project.category} illustrative construction example`}
+                      className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                    />
+                    <span className="absolute bottom-3 left-3 bg-primary/85 text-white px-3 py-1 text-[10px] uppercase tracking-wider">
+                      Illustrative visual example
+                    </span>
                   </div>
 
                   {/* Project Info */}
