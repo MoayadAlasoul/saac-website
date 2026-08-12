@@ -1,3 +1,5 @@
+import { Link } from 'wouter';
+
 /**
  * SAAC Footer Component
  * Professional corporate footer with company info, navigation, and contact
@@ -13,7 +15,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="flex items-center gap-3">
+            <Link href="/" className="flex items-center gap-3">
               <img
                 src="/manus-storage/saac-logo_a11a40d1.png"
                 alt="SAAC Logo"
@@ -23,7 +25,7 @@ export default function Footer() {
                 <h3 className="font-bold text-lg">SAAC</h3>
                 <p className="text-white/70 text-sm">Saif Abdul Aziz Allouh Contracting</p>
               </div>
-            </div>
+            </Link>
             <p className="text-white/70 text-sm leading-relaxed">
               Professional contracting and construction solutions built on quality, reliability, and commitment.
             </p>
@@ -33,14 +35,21 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-lg mb-4">Navigation</h4>
             <ul className="space-y-3">
-              {['Home', 'About Us', 'Services', 'Projects', 'Contact'].map((item) => (
-                <li key={item}>
-                  <a
-                    href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
-                    className="text-white/70 hover:text-accent transition-colors duration-200"
+              {[
+                { label: 'Home', href: '/' },
+                { label: 'About Us', href: '/about' },
+                { label: 'Services', href: '/services' },
+                { label: 'Projects', href: '/projects' },
+                { label: 'Why SAAC', href: '/why-saac' },
+                { label: 'Contact Us', href: '/contact' },
+              ].map((item) => (
+                <li key={item.label}>
+                  <Link
+                    href={item.href}
+                    className="text-white/70 hover:text-accent transition-colors duration-200 text-sm"
                   >
-                    {item}
-                  </a>
+                    {item.label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -49,20 +58,22 @@ export default function Footer() {
           {/* Services */}
           <div>
             <h4 className="font-semibold text-lg mb-4">Services</h4>
-            <ul className="space-y-3">
+            <ul className="space-y-3 text-sm">
               {[
                 'General Contracting',
                 'Construction Works',
                 'Civil Works',
                 'Finishing Works',
+                'Maintenance & Renovation',
+                'Project Management',
               ].map((service) => (
                 <li key={service}>
-                  <a
-                    href="#services"
+                  <Link
+                    href="/services"
                     className="text-white/70 hover:text-accent transition-colors duration-200"
                   >
                     {service}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

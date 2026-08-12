@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ChevronRight } from 'lucide-react';
+import { Link } from 'wouter';
 
 /**
  * SAAC Homepage
@@ -106,19 +107,23 @@ export default function Home() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-            <Button
-              size="lg"
-              className="bg-accent hover:bg-accent/90 text-primary font-semibold px-8 transition-all duration-200"
-            >
-              Explore Our Services
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white/10 font-semibold px-8 transition-all duration-200"
-            >
-              Contact Us
-            </Button>
+            <Link href="/services">
+              <Button
+                size="lg"
+                className="bg-accent hover:bg-accent/90 text-primary font-semibold px-8 transition-all duration-200 w-full sm:w-auto"
+              >
+                Explore Our Services
+              </Button>
+            </Link>
+            <Link href="/contact">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white/10 font-semibold px-8 transition-all duration-200 w-full sm:w-auto"
+              >
+                Contact Us
+              </Button>
+            </Link>
           </div>
         </div>
 
@@ -253,9 +258,9 @@ export default function Home() {
                     </span>
                     <h3 className="text-primary text-xl font-semibold">{project.title}</h3>
                     <p className="text-foreground/70 text-sm">{project.description}</p>
-                    <a href="#" className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-medium text-sm mt-4">
+                    <Link href="/projects" className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-medium text-sm mt-4">
                       View Project <ChevronRight className="h-4 w-4" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               ))}
@@ -274,12 +279,14 @@ export default function Home() {
             </p>
           </div>
 
-          <Button
-            size="lg"
-            className="bg-accent hover:bg-accent/90 text-primary font-semibold px-8 transition-all duration-200"
-          >
-            Contact Us
-          </Button>
+          <Link href="/contact">
+            <Button
+              size="lg"
+              className="bg-accent hover:bg-accent/90 text-primary font-semibold px-8 transition-all duration-200"
+            >
+              Contact Us
+            </Button>
+          </Link>
         </div>
       </section>
 
