@@ -160,7 +160,10 @@ export default function Home() {
               <div className="h-1 w-20 bg-accent mb-8"></div>
             </div>
             <p className="text-foreground/80 text-lg leading-relaxed">
-              Saif Abdul Aziz Allouh Contracting (SAAC) is a Jordanian contracting company focused on delivering reliable, high-quality construction and contracting solutions. We are committed to providing professional services that meet our clients' requirements while maintaining high standards of quality, safety, efficiency, and timely project delivery.
+              Saif Abdul Aziz Allouh Contracting (SAAC) is a Jordanian contracting company focused on delivering reliable, high-quality construction, maintenance and contracting solutions. We are committed to providing professional services that meet our clients' requirements while maintaining high standards of quality, safety, efficiency, and timely project delivery.
+            </p>
+            <p className="text-foreground/80 text-lg leading-relaxed">
+              Construction, maintenance and contracting solutions tailored to your project needs.
             </p>
           </div>
         </div>
