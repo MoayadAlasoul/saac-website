@@ -9,3 +9,9 @@
 - [x] Preserve the existing SAAC colors, typography, spacing, buttons, header, footer, and responsive behavior.
 - [x] Capture desktop and mobile screenshots for visual verification.
 - [x] Save a new checkpoint and deliver the updated website version.
+
+## Hero Image Restoration
+
+- [x] Restore the previously approved homepage hero image reference only.
+- [x] Verify that no homepage layout, text, color, or design changes were introduced.
+- [x] Capture a homepage verification screenshot and save a new checkpoint.

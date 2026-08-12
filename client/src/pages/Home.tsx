@@ -88,7 +88,7 @@ export default function Home() {
         id="home"
         className="relative min-h-screen flex items-center justify-center overflow-hidden"
         style={{
-          backgroundImage: 'url(/manus-storage/hero-construction_1cf8457d.jpg)',
+          backgroundImage: 'url(/manus-storage/saac-hero-bg_05db40ae.png)',
           backgroundBlendMode: 'multiply',
           backgroundColor: 'rgba(7, 16, 48, 0.22)',
           backgroundSize: 'cover',
