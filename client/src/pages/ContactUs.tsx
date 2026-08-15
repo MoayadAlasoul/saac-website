@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Phone, Mail, MapPin, MessageSquare, Send, CheckCircle2 } from 'lucide-react';
+import { Phone, Mail, MapPin, MessageSquare, Globe, Send, CheckCircle2 } from 'lucide-react';
 import { toast } from 'sonner';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -71,8 +71,8 @@ export default function ContactUs() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-primary">Phone</h4>
-                    <a href="tel:+962XXXXXXXXX" className="text-foreground/70 hover:text-accent text-sm">
-                      +962 (0) XXX-XXXX
+                    <a href="tel:+962795864110" className="text-foreground/70 hover:text-accent text-sm">
+                      00962795864110
                     </a>
                   </div>
                 </div>
@@ -83,8 +83,8 @@ export default function ContactUs() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-primary">Email</h4>
-                    <a href="mailto:info@saac.jo" className="text-foreground/70 hover:text-accent text-sm">
-                      info@saac.jo
+                    <a href="mailto:info@saac.site" className="text-foreground/70 hover:text-accent text-sm">
+                      info@saac.site
                     </a>
                   </div>
                 </div>
@@ -95,8 +95,20 @@ export default function ContactUs() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-primary">WhatsApp</h4>
-                    <a href="https://wa.me/962XXXXXXXXX" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-accent text-sm">
-                      +962 (0) XXX-XXXX
+                    <a href="https://wa.me/962795864110" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-accent text-sm">
+                      00962795864110
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="p-3 bg-accent/10 rounded-lg text-accent">
+                    <Globe className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-primary">Website</h4>
+                    <a href="https://saac.site" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-accent text-sm">
+                      saac.site
                     </a>
                   </div>
                 </div>

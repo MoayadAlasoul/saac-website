@@ -85,14 +85,20 @@ export default function Footer() {
             <ul className="space-y-3 text-white/70 text-sm">
               <li>
                 <span className="block font-medium text-white mb-1">Phone</span>
-                <a href="tel:+962XXXXXXXXX" className="hover:text-accent transition-colors">
-                  +962 (0) XXX-XXXX
+                <a href="tel:+962795864110" className="hover:text-accent transition-colors">
+                  00962795864110
                 </a>
               </li>
               <li>
                 <span className="block font-medium text-white mb-1">Email</span>
-                <a href="mailto:info@saac.jo" className="hover:text-accent transition-colors">
-                  info@saac.jo
+                <a href="mailto:info@saac.site" className="hover:text-accent transition-colors">
+                  info@saac.site
+                </a>
+              </li>
+              <li>
+                <span className="block font-medium text-white mb-1">Website</span>
+                <a href="https://saac.site" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                  saac.site
                 </a>
               </li>
               <li>

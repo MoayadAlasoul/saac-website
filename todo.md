@@ -15,3 +15,12 @@
 - [x] Restore the previously approved homepage hero image reference only.
 - [x] Verify that no homepage layout, text, color, or design changes were introduced.
 - [x] Capture a homepage verification screenshot and save a new checkpoint.
+
+## Contact Information Update
+
+- [x] Locate every existing phone, email, website, address, WhatsApp, and contact link reference.
+- [x] Replace the phone number with 00962795864110 everywhere it appears.
+- [x] Replace the email with info@saac.site and mailto:info@saac.site everywhere it appears.
+- [x] Add or replace the website with saac.site wherever website contact information is shown.
+- [x] Verify the Contact Us page, Footer, homepage contact areas, and related links or buttons.
+- [x] Capture responsive verification screenshots and save a new checkpoint.
